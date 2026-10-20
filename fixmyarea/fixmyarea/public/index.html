@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FixMyArea - Report and track problems near you</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <h1>FixMyArea</h1>
+  <input id="place" type="search" placeholder="Search a place or area" aria-label="Search a place">
+  <button id="locate" class="btn ghost">Use my location</button>
+  <button id="reportBtn" class="btn">Report a problem</button>
+</header>
+<main class="layout">
+  <aside class="side">
+    <section class="stats" id="stats" aria-live="polite"></section>
+    <div class="filters">
+      <select id="fCategory" aria-label="Category"><option value="">All categories</option></select>
+      <select id="fStatus" aria-label="Status">
+        <option value="">Any status</option><option value="open">Open</option>
+        <option value="in_progress">In progress</option><option value="resolved">Resolved</option>
+      </select>
+      <input id="fText" type="search" placeholder="Filter by keyword">
+    </div>
+    <ul id="list" class="list"></ul>
+  </aside>
+  <section class="mapwrap">
+    <div id="map" role="application" aria-label="Map of reported issues"></div>
+    <div id="nokey" class="nokey" hidden>Add GOOGLE_MAPS_API_KEY to your .env file to load the map. The issue list still works.</div>
+  </section>
+</main>
+
+<dialog id="reportDlg">
+  <form id="reportForm" method="dialog">
+    <h2>Report a problem</h2>
+    <label>Title <input name="title" required maxlength="100"></label>
+    <label>Category <select name="category" id="rCategory" required></select></label>
+    <label>Details <textarea name="description" rows="3" maxlength="800"></textarea></label>
+    <p class="hint" id="pickHint">Click the map to place the pin, or use your location.</p>
+    <div class="row"><button type="button" class="btn ghost" id="cancelReport">Cancel</button>
+    <button class="btn" id="submitReport">Send report</button></div>
+  </form>
+</dialog>
+
+<dialog id="detailDlg"><div id="detail"></div><button class="btn ghost" id="closeDetail">Close</button></dialog>
+<script src="/maps-loader.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

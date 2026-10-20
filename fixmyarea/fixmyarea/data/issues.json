@@ -1,0 +1,67 @@
+[
+ {
+  "id": "seed-1",
+  "title": "Deep pothole on main road",
+  "description": "Large pothole near the market crossing, bikes are skidding.",
+  "category": "road",
+  "status": "open",
+  "lat": 28.6139,
+  "lng": 77.209,
+  "address": "Market crossing",
+  "upvotes": 14,
+  "comments": [],
+  "createdAt": "2026-10-01T09:00:00.000Z"
+ },
+ {
+  "id": "seed-2",
+  "title": "Streetlight not working",
+  "description": "Three lights are off on the park side lane since last week.",
+  "category": "light",
+  "status": "in_progress",
+  "lat": 28.6215,
+  "lng": 77.2183,
+  "address": "Park lane",
+  "upvotes": 9,
+  "comments": [],
+  "createdAt": "2026-10-03T18:30:00.000Z"
+ },
+ {
+  "id": "seed-3",
+  "title": "Garbage not collected",
+  "description": "Garbage pile is overflowing near the bus stop.",
+  "category": "garbage",
+  "status": "open",
+  "lat": 28.605,
+  "lng": 77.199,
+  "address": "Bus stop",
+  "upvotes": 21,
+  "comments": [],
+  "createdAt": "2026-10-05T07:15:00.000Z"
+ },
+ {
+  "id": "seed-4",
+  "title": "Water pipe leakage",
+  "description": "Clean water is flowing onto the road all day.",
+  "category": "water",
+  "status": "resolved",
+  "lat": 28.6302,
+  "lng": 77.201,
+  "address": "Block C",
+  "upvotes": 6,
+  "comments": [],
+  "createdAt": "2026-09-25T11:00:00.000Z"
+ },
+ {
+  "id": "seed-5",
+  "title": "Open drain without cover",
+  "description": "Uncovered drain next to the school gate is unsafe for children.",
+  "category": "drain",
+  "status": "open",
+  "lat": 28.618,
+  "lng": 77.23,
+  "address": "School gate",
+  "upvotes": 17,
+  "comments": [],
+  "createdAt": "2026-10-08T08:45:00.000Z"
+ }
+]
